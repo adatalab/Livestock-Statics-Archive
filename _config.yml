@@ -1,0 +1,36 @@
+
+title: Livestock Statics Archive 
+desctiption: Livestock Statics Archive @adatalab
+url: 
+permalink: ':title/'
+
+markdown: kramdown
+baseurl: ""
+
+column_width: 240
+
+sass:
+    style: compressed
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+highlight: rouge
+
+include: [_pages]
+version: 0.8
+
+gems: [jekyll-paginate, jekyll-seo-tag, jekyll/tagging]
+
+tag_feed_layout: tag_feed
+tag_feed_dir: tag
+tag_permalink_style: pretty
